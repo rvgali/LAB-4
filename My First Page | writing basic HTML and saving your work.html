@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+
+  <title>My First Page | writing basic HTML and saving your work</title>
+
+<meta name="author" content="Ross Shannon">
+<meta name="copyright" content="Ross Shannon 2000–2019 and beyond...">
+<meta name="robots" content="all">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<base target="_top">
+
+<style type="text/css" media="all">
+@import "/bubbleicious.css";
+</style>
+<link rel="stylesheet" type="text/css" href="/print.css" media="print">
+
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" title="HTML Source" href="/htmlsource-search.xml">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script src="/sourcescripts.js" type="text/javascript"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-204627-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-204627-1');
+</script>
+
+</head>
+
+
+<body id="htmlsource">
+
+<div id="wrapper">
+
+<!-- **Header -->
+<div id="header">
+<div id="masthead">
+
+<h1 class="sitetitle"><a href="/" title="Go back to the Homepage">HTML Source <span class="subtitle">: HTML Tutorials</span></a></h1>
+
+<p class="motto">&lt;html source=&quot;excellent&quot;&gt;</p>
+
+</div>
+
+<form id="searchbox" method="get" action="https://www.google.com/search" onsubmit="return checkSearch()">
+  <p class="boxhead"><label for="mainsearch"><strong>S</strong>earch the Source &nbsp;&curren;</label></p>
+  <input type="search" size="20" name="q" accesskey="s" maxlength="255" class="searchbox" id="mainsearch">
+  <input type="hidden" name="sitesearch" value="yourhtmlsource.com">
+  <input type="hidden" name="ie" value="UTF-8">
+  <input type="hidden" name="oe" value="UTF-8">
+  <input type="submit" value="Search!" class="button">
+</form>
+
+</div>
+
+<!-- **Other Stuff bar -->
+<ul id="otherstuff">
+  <li><a href="/fullindex/" class="nav3">Full Index</a></li>
+  <li><a href="/about/" class="nav3">About</a></li>
+  <li><a href="/contact/" class="nav3">Contact</a></li>
+  <li><a href="/updates/" class="nav3">Updates</a></li>
+</ul>
+
+<div id="main">
+
+<div id="content">
+
+
+<p class="pathbar"><span class="pathtitle">Path</span> // <a href="http://www.yourhtmlsource.com/" class="nav2" id="url">www.yourhtmlsource.com</a> → <a href="./" class="nav2">My First Site</a> → MY FIRST PAGE</p>
+
+<h1 class="maintitle">My First Page</h1>
+<hr class="big blue">
+<div class="byline">by <a href="/about/" class="more" title="Yep.">Ross Shannon</a></div>
+
+<!-- Intro -->
+<p>So we’re set? You have your <a href="../starthere/whatdoineed.html">text-editor</a> at the ready (preferably NotePad or TextEdit), you know what all the <a href="../starthere/glossary.html" title="You don’t?? Do something about it">acronyms</a> stand for, and you want to write something? Great, let’s get going.</p>
+
+<p>Let’s just go through the steps involved before I actually introduce the code. Today,</p>
+
+<ul>
+	<li>you will <strong>write out</strong> the basic format, or skeleton, of a HTML page</li>
+	<li>you will <strong>save it</strong> as a HTML file</li>
+	<li>you will <strong>view it</strong> in your web browser</li>
+	<li>you will <strong>smile</strong> at the fact that it actually worked</li>
+</ul>
+
+<p class="pagenavbox" id="pagenavigation">Page Navigation:<br>
+  <a href="#basicformat" class="pagenav">A Basic Page Format</a> 
+	&middot; <a href="#tags" class="pagenav2">Tags, eh?</a> 
+	&middot; <a href="#tagstructure" class="pagenav2">Structure of HTML Elements</a> 
+	&middot; <a href="#makeapage" class="pagenav2">So let’s make a page</a> 
+| <a href="#saving" class="pagenav">Saving your Masterpiece</a> 
+| <a href="#looking" class="pagenav">Having a look</a> 
+</p>
+ 
+<p class="lastmodified"><img src="/media/clock.png" height="17" width="16" alt="Clock" style="vertical-align: top;"> This page was last updated on 2012-08-21</p>
+<script type="text/javascript" src="/searchhiplus.js"></script>
+<script type="text/javascript">searchHiOption();</script>
+<hr class="blue">
+
+
+  <div id="adsense">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Responsive main block -->
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7702953938020767"
+     data-ad-slot="5870143087"
+     data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+<br>
+
+
+<!-- Content Start -->
+
+
+<h2 class="heading" id="basicformat">A Basic Page Format</h2>
+
+<p>All pages follow this basic structure. Let’s start with the first <strong>tags</strong> you’re going to learn.</p>
+
+<h3 class="subhead" id="tags">Tags, eh?</h3>
+
+<p>Yeah. They are the things between the <strong>&lt;&gt;</strong> brackets. I’m sure you’ve seen them in someone’s code before, but if you haven’t, right-click this page and select “<u>V</u>iew Source”. The code that makes this page will appear. Have a quick glance through it. Yes, it probably makes little sense yet, but that doesn’t matter at the moment. See how, later on, there’s some text? It’s the words you’re reading now. Surrounding all that is a load of stuff, all being encased by &lt;&gt;s. That’s all the HTML that goes into making this page.</p>
+
+<h3 class="subhead" id="tagstructure">Structure of HTML Elements</h3>
+
+<p>Tags follow a common structure too. Some of those tags you can see are ”start tags”, like <code>&lt;b&gt;</code>, and others are paired with them and called “end tags”. They look like <code>&lt;/b&gt;</code>. Together, a start tag and an end tag form a <strong>HTML element</strong>. A start tag opens an element and an end tag closes it again.</p>
+  
+<p>For example, to make text <strong>bold</strong>, you use the <code>b</code> element. So, at the point in your text that you want the bold to start, you just stick the angle-brackets around that and put <code>&lt;b&gt;</code>, and when you want it to stop, you put <code>&lt;/b&gt;</code>. An end tag is simply the start tag with a <strong>forward slash</strong> in front of the element name. Some tags won’t need that end tag, but most do, so don’t forget it.</p>
+
+<h3 class="subhead" id="makeapage">So let’s make a page</h3>
+
+<p>Oh yeah. Ok, first step. Open <strong>Notepad</strong>, or any other <a href="../starthere/whatdoineed.html" title="But how? Where?">text editor</a>. Type this:</p>
+
+<p class="code"><code>&lt;html&gt;<br>
+&lt;/html&gt;</code></p>
+
+<p>These are the standard start and end tags on any page. Note that when I say “standard”, that means “you <em>must</em> put it there”. HTML elements can contain text and other HTML elements inside them, and these two tags will contain the rest of the HTML that makes your page.</p>
+
+<p>Now we’ll add in the rest of the structure. Modify your page to this:</p>
+
+<fieldset class="important">
+<legend>Very Important</legend>
+
+<code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	   "http://www.w3.org/TR/html4/loose.dtd"&gt;<br><br>
+
+<strong>&lt;html&gt;</strong><br><br>
+
+&lt;head&gt;<br>
+&nbsp; &nbsp; &lt;title&gt;My First HTML Page&lt;/title&gt;<br>
+&lt;/head&gt;<br><br>
+
+&lt;body&gt;<br><br>
+&nbsp; &nbsp; My text goes here.<br><br>
+&lt;/body&gt;<br><br>
+
+<strong>&lt;/html&gt;</strong>
+</code>
+</fieldset>
+
+<p>That complicated looking bit at the top isn’t something you need to worry about just yet. It basically tells your browser which <a href="../starthere/historyofhtml.html" title="Learn about the past, present and future of HTML">version of HTML</a> you’re using in your page. You are going to be using <em>HTML 4.01</em>, the most recent version of HTML. Later you may move to a newer version, but HTML 4.01 will be perfect for most of your sites.</p>
+
+<p>HTML pages are made up of two distinct parts &#8212; the <code>head</code> part, and the <code>body</code> part. The <code>head</code> part contains things that won’t appear on your page. Most of the elements that go in the <code>head</code> part are advanced stuff for search engines and the like, so the only one you need to know for now is <code>title</code>.</p>
+
+<p>The text you put into the <code><strong>title</strong></code> element is the text that appears at the very top of your browser window when you view the page. You can type whatever you want in that. No other HTML will work in here, although <a href="../text/specialcharacters.html" title="Read the Character Chart">special characters</a> will. Don’t forget to add the <code>title</code>, because without it, that bar will have the <a href="../starthere/glossary.html#url" title="URL? What the hell is that?">URL</a> of your page in it, and that’s just nasty. This text will also be used if a reader bookmarks your page, and in search engine listings, so take the time to write a unique title for each page.</p>
+
+<p>The <code><strong>body</strong></code> section is the <strong>main part</strong> of your page. Everything between those two tags will be visible on your page. So type something there now. Whatever you want, I don’t care. Be spontaneous.</p>
+
+<p>Now your page looks something like this:</p>
+
+<p class="code"><code>
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	   "http://www.w3.org/TR/html4/loose.dtd"&gt;<br><br>
+
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&nbsp; &nbsp; &lt;title&gt;My first HTML page&lt;/title&gt;<br>
+&lt;/head&gt;<br><br>
+&lt;body&gt;<br>
+&nbsp; &nbsp; <span title="Groan!">&lt;b&gt;Hello!&lt;/b&gt;<br>
+&nbsp; &nbsp; I hope you’re having as much fun reading this as I had writing it!</span><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+</code></p>
+
+<p>That’s about as complicated as I’m going to make this tutorial. If you want to <strong>format</strong> your text, check the <a href="basicformatting.html">next page</a> where you will find all the tags needed to make your page more presentable. For now, stick with saving your page and checking how it looks...</p>
+
+<h2 class="heading" id="saving">Saving your masterpiece</h2>
+
+<p>Now that you have your first page written, you need to save it to your computer’s hard disk, and then open it up in a different program (your web browser). This part can be a little tricky, so please follow along closely.</p>
+
+<p>When you double-click a file on your computer’s desktop, the computer knows what program to open the file in by checking the file’s “extension”. This is the characters that come after the name of the file. So, for example, .mp3 files will open in a program that can play music, and .txt files will open in a text editor.</p>
+
+<p>You need to give your document a file extension of ”.html”, which will tell it to open the file in your web browser, such as Internet Explorer, Firefox or Safari (at least one of these programs will have come with your computer — in fact, you’re reading this in one of them right now!).</p>
+
+<p>Right now you should be editing your HTML page in a text editor, which normally saves files with the extension “.txt”. We want to make it save in “.html” instead, so, in your text editor click <strong>File → Save As…</strong>. Find the place on your hard drive where you want to keep all your pages (I would recommend you <strong>create a new folder</strong> on your desktop and keep all of your documents together). If you use Microsoft Windows, there will be a box labelled “save as type”; change it to “all files *.*”. This means that you can save the data (in this case, some text) into any format. Now type in the name index<strong>.html</strong> for your file and click <strong>save</strong>. Finito.</p>
+
+<p class="sourcetip"><strong>sourcetip:</strong> After you have done this once, the next time you change your code, you will only need to press <em>Save</em>, not <em>Save As…</em>, because the computer now knows this is a HTML file.</p>
+
+<p>Your page’s filename can consist of any combination of letters, numbers or _ (underscore) and - (hyphen) characters. It is a good practice to start the filename with a letter and <strong>use lowercase letters</strong> at all times. This will make sure that you won’t get any capitalisation  errors when people try to type your page’s address into their web browser. You should always call your homepage <em>index.html</em> &#8212; this will be important later on.</p>
+
+<dl>
+	<dt><strong>Question: how come I sometimes see some pages named “something.<em>htm”</em>?</strong></dt>
+	<dd><p>Well, a long time ago back in the 1990s, file extensions were limited to only three letters, hence “.htm”. You could name all your files using .htm as the suffix, but there are so few people with operating systems that old that you’re better off just using .html and being done with it.</p></dd>
+
+	<dt><strong>Note to users of word processors</strong></dt>
+	<dd><p>If you’re trying to use something like Microsoft Word to make your pages (which is a really bad idea), you don’t want to be saving all of the editor’s values for margins and formatting etc. when you save your html file, as they can’t be read by your browser. So when saving your file, make sure to save it as <em>text-only</em>, and only the things useful to your browser will get saved.</p>
+	  
+	  <p>Again, I implore you all to use just a simple text editor while you are learning HTML. It will mean that much fewer things can go wrong, and you will learn so much quicker!</p></dd>
+</dl>
+
+<h2 class="heading" id="looking">Having a look</h2>
+
+<p>Well, you’ve been toiling away on this page for hours, has it paid off? Let’s check. Create a new web browser window to open it in (so that you can keep this page open when you do it) &#8212; press <kbd class="key">Ctrl + N</kbd>. Now, in that new one that should have opened, go to <strong>File → Open</strong>. Click Browse… and find the file you just saved (“index.html”, unless you were cheeky and called it something else). Click the Open button. Your page will appear in all it’s glory. You did it! Huzzah!</p>
+
+<p>Ok, now smile. ☺</p>
+
+<p>In the next tutorial, you will learn about more of the options you have to <a href="basicformatting.html">format your text</a>.</p>
+
+
+<iframe src="https://www.facebook.com/widgets/like.php?href=http://www.yourhtmlsource.com"
+        scrolling="no" frameborder="0"
+        style="border:none; width: 100%; height: 80px; margin-top: 1.5em"></iframe>
+
+<div id="endlinks">
+<hr class="blue">
+
+<p class="pathbar centered"><strong class="pathtitle">Keep Learning</strong> // &nbsp; <a href="basicformatting.html" class="nav2">Basic Formatting</a> → Go! Go!
+</p>
+<p class="pathbar"><strong class="pathtitle">Other My First Site Articles</strong> // &nbsp;&nbsp; 
+My First Page&nbsp;&middot;
+<a href="basicformatting.html" class="nav2">Basic Formatting</a>&nbsp;&middot;
+<a href="basiclinks.html" class="nav2">Basic Links</a>&nbsp;&middot;
+<a href="basicimages.html" class="nav2">Basic Images</a>&nbsp;&middot;
+<a href="body.html" class="nav2">&lt;body&gt; Attributes</a>&nbsp;&middot;
+<a href="basicwebdesign.html" class="nav2">Basic Web Design</a>&nbsp;&middot;
+<a href="tagreference.html" class="nav2">HTML Tag Reference</a>&nbsp;&middot;
+<a href="uploading.html" class="nav2">Uploading your Site</a>&nbsp;&middot;
+</p>
+<p class="pathbar"><strong class="pathtitle">What&#8217;s Related</strong> // &nbsp;&nbsp;
+</p>
+
+<hr class="blue">
+
+<p class="centered"><a href="/">Homepage</a> &middot; <a href="/fullindex/">Full Index</a> &middot; <a href="./">Section Index</a></p>
+</div>
+
+
+</div>
+
+<div id="navigation">
+
+<!-- **Main Navigation -->
+
+<!-- google_ad_section_start(weight=ignore) -->
+
+<div class="primary" id="guide">
+
+<p><strong>Starting Off</strong> &nbsp;<br>
+<a href="/starthere/" class="nav">Start Here</a>&nbsp;&middot;<br>
+<a href="/myfirstsite/" class="nav">My First Site</a>&nbsp;&middot;</p>
+
+<p><strong>Lessons</strong> &nbsp;<br>
+<a href="/text/" class="nav">Text</a>&nbsp;&middot;<br>
+<a href="/images/" class="nav">Images</a>&nbsp;&middot;<br>
+<a href="/tables/" class="nav">Tables</a>&nbsp;&middot;<br>
+<a href="/frames/" class="nav">Frames</a>&nbsp;&middot;<br>
+<a href="/forms/" class="nav">Forms</a>&nbsp;&middot;<br>
+<a href="/stylesheets/" class="nav">Stylesheets</a>&nbsp;&middot;</p>
+
+<p><strong>Advanced</strong> &nbsp;<br>
+<a href="/accessibility/" class="nav">Accessibility</a>&nbsp;&middot;<br>
+<a href="/promotion/" class="nav">Promotion</a>&nbsp;&middot;<br>
+<a href="/optimisation/" class="nav">Optimisation</a>&nbsp;&middot;<br>
+<a href="/sitemanagement/" class="nav">Site Management</a>&nbsp;&middot;</p>
+
+<p><strong>Scripting</strong> &nbsp;<br>
+<a href="/javascript/" class="nav">JavaScript</a>&nbsp;&middot;<br>
+<a href="/cgi/" class="nav">CGI Scripting</a>&nbsp;&middot;</p>
+
+<p><strong>Reviews</strong> &nbsp;<br>
+<a href="/hosting/" class="nav">Web Hosting</a>&nbsp;&middot;<br>
+<a href="/books/" class="nav">Books</a>&nbsp;&middot;<br>
+<a href="/recommendations/" class="nav">Recommendations</a>&nbsp;&middot;</p>
+
+</div>
+
+<div class="secondary sourcetoolbox">
+<p class="boxhead"><strong>HTML Source Toolbox &nbsp;&curren;</strong></p>
+<strong>Love us?</strong> &nbsp;<img src="/media/faves.gif" alt=" " class="icon" width="20" height="14"><br>
+<hr class="white">
+<div id="faver">Add HTML Source to your bookmarks!</div>
+<noscript>Add HTML Source to your bookmarks!</noscript>
+<hr class="white">
+<br>
+<strong>Printable pages</strong> &nbsp;<img src="/media/print.gif" width="20" height="15" class="icon" alt=" "><br>
+<hr class="white">
+Just print pages normally, our stylesheet will automatically reformat the page for you.<br>
+<hr class="white">
+<br>
+<strong>Translations &nbsp;&curren;</strong><br>
+<hr class="white">
+<div id="google_translate_element">Translate automatically into:</div>
+<hr class="white">
+<br>
+<strong>Valid code, naturally</strong> &nbsp;<img src="/media/validcode.gif" alt=" " class="icon" width="14" height="14"><br>
+<hr class="white">
+We use (and teach!) only the finest <a href="http://validator.w3.org/" class="nav" rel="nofollow" title="Bathe in our compliance.">valid HTML</a> and <a href="http://jigsaw.w3.org/css-validator/" class="nav" rel="nofollow">CSS</a>, for your comfort and safety.
+<hr class="white">
+</div>
+
+<div class="primary" id="author">
+  <p><a href="/about/"><img src="/media/ross-icon.png" id="profile-photo" alt="Ross Shannon" title="Hello" height="55" width="60"></a>HTML Source is by me, Ross Shannon. I’m a web designer from Ireland, and am currently finishing my PhD in Computer Science.</p>
+</div>
+
+<div class="featured centered" style="margin: 0 0 10px 0">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="margin: 0">
+<p><strong>You can support HTML Source by making a small donation.</strong></p>
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="ross@yourhtmlsource.com">
+<input value="Support HTML Source" name="item_name" type="hidden">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="tax" value="0">
+<input type="image" src="/media/paypal.gif" name="submit" alt="PayPal donate button" title="Thankee" style="width: 62px; height: 31px;">
+<p><a href="/support/" class="nav2">Thanks to our wonderful supporters!</a></p>
+</form>
+</div>
+
+<div id="feedback"><strong>Having fun? Getting lost? Got some comments?</strong><br>
+<a href="/feedback/" rel="nofollow" class="nav" title="All in the name of progress, see?">We want them!</a></div>
+
+<div id="sideline-ad">
+
+</div>
+
+<div class="secondary">
+<p class="boxhead"><strong>More Resources &nbsp;&curren;</strong></p>
+
+<strong>Books</strong>
+<hr class="white">
+
+<p><a href="http://www.amazon.com/exec/obidos/ASIN/0201354934/htmlsource-20/" class="resource">&raquo; HTML 4 for the World Wide Web</a><br>
+by Elizabeth Castro</p>
+
+<p><a href="http://www.amazon.com/exec/obidos/ASIN/059600026X/htmlsource-20/" class="resource">&raquo; HTML &amp; XHTML: The Definitive Guide</a><br>
+by Chuck Musciano, Bill Kennedy</p>
+
+<p><a href="http://www.amazon.com/exec/obidos/ASIN/076450214X/htmlsource-20/" class="resource">&raquo; HTML for Dummies</a><br>
+by Ed Tittel, Steve James, Steven N. James, Stephen Nelson James</p>
+
+</div>
+
+
+
+</div>
+</div>
+
+<!-- **Bottom Bar -->
+<div id="footer">
+<p id="vroom"><a href="#htmlsource" class="nav">Go back to top &#8593;</a></p>
+<p>&copy; 2000&#8211;2019 &middot; <a href="/about/" class="more" title="Find out more about me, should you so wish">Ross Shannon</a></p>
+</div>
+
+</div>
+
+<!-- google_ad_section_end -->
+
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en'
+  }, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+</body>
+<!-- ~Fin~ -->
+</html>
